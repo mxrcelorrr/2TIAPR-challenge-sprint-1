@@ -1,4 +1,5 @@
 import VozExemplo from '../components/VozExemplo.jsx'
+import { interacoes } from '../data/interacoes.js'
 
 const PASSOS = [
   {
@@ -19,6 +20,8 @@ const PASSOS = [
 ]
 
 function Inicio({ onIrPara }) {
+  const exemplo = interacoes[0]
+
   return (
     <section className="pagina">
       <div className="hero">
@@ -43,10 +46,7 @@ function Inicio({ onIrPara }) {
             </button>
           </div>
         </div>
-        <VozExemplo
-          comando="Registrar vegetação alta no km 42 da Bandeirantes"
-          resposta="Ocorrência #1024 registrada: vegetação alta, SP-348 km 42, sentido Interior."
-        />
+        <VozExemplo comando={exemplo.comando} resposta={exemplo.resposta} />
       </div>
 
       <div className="contexto">

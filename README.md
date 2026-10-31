@@ -58,5 +58,5 @@ Depois, abra o endereço exibido no terminal (normalmente `http://localhost:5173
 | Marcelo Augusto | RM567176 | Criação do repositório e do projeto com Vite (`package.json`, `vite.config.js`, `index.html`, `main.jsx`), `App.jsx` com a navegação entre telas via `useState` e o README |
 | Leonardo Barros | RM566788 | Identidade visual: componentes `Header` (com a logo) e `Nav`, estilos globais em `index.css` (cores, tipografia e layout responsivo) |
 | Yuri Quirino | RM568512 | Tela Consultas: página `Consultas.jsx`, componentes `CardTrecho`, `PlacaKm` e `FiltroStatus`, e os dados fixos de `src/data/trechos.js` |
-| Rafael Tavares | RM567357 | Tela Interações: página `Interacoes.jsx`, componente `CardInteracao` e o histórico simulado de `src/data/interacoes.js` |
-| Gabriel Muniz (via commit "Início, StatusBadge e formatters.js" pela conta do twichhs) | RM568237 | Tela Início: página `Inicio.jsx` com a apresentação do problema, componente `VozExemplo`, o componente compartilhado `StatusBadge` e as funções de formatação de `src/utils/formatters.js` |
+| Rafael Tavares | RM567357 | Tela Interações: página `Interacoes.jsx`, componentes `CardInteracao` e `StatusBadge`, e o histórico simulado de `src/data/interacoes.js` |
+| Gabriel Muniz | RM568237 | Tela Início: página `Inicio.jsx` com a apresentação do problema, componente `VozExemplo` e as funções de formatação de `src/utils/formatters.js` |
