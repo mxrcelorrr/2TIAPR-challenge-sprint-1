@@ -1,17 +1,19 @@
-// Versão provisória: será substituída pelo Nav final
 function Nav({ itens, telaAtual, onTrocarTela }) {
   return (
-    <nav>
-      {itens.map((item) => (
-        <button
-          key={item.id}
-          type="button"
-          disabled={telaAtual === item.id}
-          onClick={() => onTrocarTela(item.id)}
-        >
-          {item.rotulo}
-        </button>
-      ))}
+    <nav className="nav" aria-label="Telas da plataforma">
+      <div className="nav__trilho">
+        {itens.map((item) => (
+          <button
+            key={item.id}
+            type="button"
+            className={`nav__botao ${telaAtual === item.id ? 'nav__botao--ativo' : ''}`}
+            aria-current={telaAtual === item.id ? 'page' : undefined}
+            onClick={() => onTrocarTela(item.id)}
+          >
+            {item.rotulo}
+          </button>
+        ))}
+      </div>
     </nav>
   )
 }
